@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.champwang.test.myapplication">
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".FrameLayoutTest">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+        <activity android:name=".FragmentMainActivity">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+        <activity
+            android:name=".MapAty"
+            android:label="@string/title_activity_map_aty"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".AtyRecyclerView" />
+        <activity android:name=".AtyRVBtn" />
+        <activity android:name=".DebugInfo" />
+        <activity android:name=".TrackRecyclerView" />
+        <activity
+            android:name=".SliderActivity"
+            android:label="@string/title_activity_slider"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TabbedActivity"
+            android:label="@string/title_activity_tabbed"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".LayoutWeightTest"></activity>
+        <activity android:name=".ActivityAddWidgetCode"></activity>
+        <activity android:name=".ChooseADate"></activity>
+        <activity android:name=".SingleChoose"></activity>
+        <activity android:name=".MulChoose"></activity>
+    </application>
+
+</manifest>

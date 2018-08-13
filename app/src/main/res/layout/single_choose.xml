@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Which season is the hostest in a year, spring, summer, autumn or winter?"
+        android:textSize="30sp"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/rbA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A. Spring" />
+
+        <RadioButton
+            android:id="@+id/rbB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B. Summer" />
+
+        <RadioButton
+            android:id="@+id/rbC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C. Autumn" />
+
+        <RadioButton
+            android:id="@+id/rbD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="D. Winter" />
+
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="submit"
+        android:id="@+id/btnSubmit"
+        />
+</LinearLayout>

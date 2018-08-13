@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Which do you lick to eat or drink?"
+        android:id="@+id/tvQuestion"/>
+
+    <CheckBox
+        android:id="@+id/cbA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:text="apple" />
+
+    <CheckBox
+        android:id="@+id/cbB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:text="rice" />
+
+    <CheckBox
+        android:id="@+id/cbC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:text="milk" />
+
+    <CheckBox
+        android:id="@+id/cbD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:text="meat" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="result"
+        android:textSize="40sp"
+        android:id="@+id/tvResult"/>
+
+</LinearLayout>
