@@ -128,9 +128,9 @@ class TrackAdapter extends RecyclerView.Adapter {
                 break;
 
             case 10:
-                System.out.println("MulChoose start" + "   position: " + position);
+                System.out.println("MyViewTest start" + "   position: " + position);
                 v.getContext().startActivity(new Intent(
-                        v.getContext(), MulChoose.class));
+                        v.getContext(), MyViewTest.class));
                 break;
 
             default:
@@ -155,7 +155,7 @@ class TrackAdapter extends RecyclerView.Adapter {
             new TrackData("7","ChooseADate", "a sample"),
             new TrackData("8","SingleChoose", "sample"),
             new TrackData("9","MulChoose", "sample"),
-            new TrackData("10","MulChoose", "sample"),
+            new TrackData("10","MyViewTest", "sample"),
 
             new TrackData("1","test", "11"),
             new TrackData("2","test", "222"),

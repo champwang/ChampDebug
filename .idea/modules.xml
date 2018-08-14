@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ChampDebug.iml" filepath="$PROJECT_DIR$/ChampDebug.iml" />
+      <module fileurl="file://D:\Users\qingchen\AndroidStudioProjects\ChampDebug\ChampDebug.iml" filepath="D:\Users\qingchen\AndroidStudioProjects\ChampDebug\ChampDebug.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://D:\Users\qingchen\AndroidStudioProjects\ChampDebug\app\app.iml" filepath="D:\Users\qingchen\AndroidStudioProjects\ChampDebug\app\app.iml" />
     </modules>
   </component>
 </project>
