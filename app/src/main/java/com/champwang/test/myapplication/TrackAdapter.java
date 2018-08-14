@@ -127,6 +127,12 @@ class TrackAdapter extends RecyclerView.Adapter {
                         v.getContext(), MulChoose.class));
                 break;
 
+            case 10:
+                System.out.println("MulChoose start" + "   position: " + position);
+                v.getContext().startActivity(new Intent(
+                        v.getContext(), MulChoose.class));
+                break;
+
             default:
                 System.out.println("tavh.itemView.setOnClickListener" + "   dafault" +
                         position);
@@ -149,8 +155,8 @@ class TrackAdapter extends RecyclerView.Adapter {
             new TrackData("7","ChooseADate", "a sample"),
             new TrackData("8","SingleChoose", "sample"),
             new TrackData("9","MulChoose", "sample"),
+            new TrackData("10","MulChoose", "sample"),
 
-            new TrackData("3","test", "3333"),
             new TrackData("1","test", "11"),
             new TrackData("2","test", "222"),
             new TrackData("3","test", "3333"),
