@@ -1,4 +1,5 @@
 package com.champwang.test.myapplication;
+import android.content.Intent;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -55,4 +56,7 @@ public class TrackRecyclerView extends AppCompatActivity {
 
     }
 
+    public static Intent getStartActivityIntent(MainActivity mainActivity) {
+        return  new Intent (mainActivity, TrackRecyclerView.class);
+    }
 }

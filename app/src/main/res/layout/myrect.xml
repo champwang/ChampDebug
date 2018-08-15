@@ -2,21 +2,33 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:champ="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:orientation="vertical">
-
-    <com.champwang.test.myapplication.MyRect
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        champ:rect_color ="#ffee00ff"
-        />
+    android:orientation="vertical"
+    android:id="@+id/myRectLayout">
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="hello button"
-        android:background="@drawable/btn_normal"
+        android:layout_weight="1"
+        android:text="@string/hello_button"
+        android:background="@drawable/button_skin"
+        android:id="@+id/btnMyRectTop"
+        />
+    <com.champwang.test.myapplication.MyRect
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
         />
 
+    <!--champ:rect_color ="#ffee00ff"-->
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/hello_button"
+        android:background="@drawable/button_skin"
+        android:id="@+id/btnMyRectBottom"
+        />
 </LinearLayout>

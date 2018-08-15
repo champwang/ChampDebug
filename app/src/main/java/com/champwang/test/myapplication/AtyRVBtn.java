@@ -1,5 +1,6 @@
 package com.champwang.test.myapplication;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -51,5 +52,9 @@ public class AtyRVBtn extends AppCompatActivity {
             private String[] data = new String[]{"hello2", "champwang", "good", "luck"};
          });
 
+    }
+
+    public static Intent getStartActivityIntent(MainActivity mainActivity) {
+        return new Intent(mainActivity, AtyRVBtn.class);
     }
 }

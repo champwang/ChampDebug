@@ -16,7 +16,7 @@ import android.view.MenuItem;
 import android.view.WindowManager;
 
 public class MainActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+        implements NavigationView.OnNavigationItemSelectedListener, View.OnClickListener {
     private static final String TAG = "MainActivity";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,29 +29,16 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-
-        findViewById(R.id.btnStartRVChampTrack).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                startActivity(new Intent(MainActivity.this, TrackRecyclerView.class));
-            }
-        });
-
-
-        findViewById(R.id.btnStartRecyclerView).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, AtyRecyclerView.class));
-            }
-        });
-
-        findViewById(R.id.btnStartRecyclerViewButton).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, AtyRVBtn.class));
-            }
-        });
+        findViewById(R.id.btnStartRVChampTrack).setOnClickListener(this);
+        findViewById(R.id.btnStartRecyclerView).setOnClickListener(this);
+        findViewById(R.id.btnStartRecyclerViewButton).setOnClickListener(this);
+//        findViewById(R.id.btnStartRVChampTrack).setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//
+//                startActivity(new Intent(MainActivity.this, TrackRecyclerView.class));
+//            }
+//        });
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -127,5 +114,24 @@ public class MainActivity extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    @Override
+    public void onClick(View v) {
+        Intent intent = null;
+        switch (v.getId()) {
+            case R.id.btnStartRVChampTrack:
+                intent = TrackRecyclerView.getStartActivityIntent(this);
+                break;
+            case R.id.btnStartRecyclerView:
+                intent = AtyRecyclerView.getStartActivityIntent(this);
+                break;
+            case R.id.btnStartRecyclerViewButton:
+                intent = AtyRVBtn.getStartActivityIntent(this);
+                break;
+        }
+        if (intent != null) {
+            startActivity(intent);
+        }
     }
 }

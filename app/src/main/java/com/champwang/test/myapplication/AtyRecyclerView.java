@@ -1,5 +1,6 @@
 package com.champwang.test.myapplication;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
@@ -52,5 +53,9 @@ public class AtyRecyclerView extends AppCompatActivity {
                 return 200;
             }
         });
+    }
+
+    public static Intent getStartActivityIntent(MainActivity mainActivity) {
+        return new Intent(mainActivity, AtyRecyclerView.class);
     }
 }
