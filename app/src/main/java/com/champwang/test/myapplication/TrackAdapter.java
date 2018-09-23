@@ -133,6 +133,12 @@ class TrackAdapter extends RecyclerView.Adapter {
                         v.getContext(), MyViewTest.class));
                 break;
 
+            case 11:
+                System.out.println("MyListViewTest start" + "   position: " + position);
+                v.getContext().startActivity(new Intent(
+                        v.getContext(), MyListViewTest.class));
+                break;
+
             default:
                 System.out.println("tavh.itemView.setOnClickListener" + "   dafault" +
                         position);
@@ -156,6 +162,9 @@ class TrackAdapter extends RecyclerView.Adapter {
             new TrackData("8","SingleChoose", "sample"),
             new TrackData("9","MulChoose", "sample"),
             new TrackData("10","MyViewTest", "sample"),
+
+            new TrackData("11","MyListViewTest", "sample"),
+
 
             new TrackData("1","test", "11"),
             new TrackData("2","test", "222"),

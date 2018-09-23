@@ -54,7 +54,7 @@
         <activity android:name=".SingleChoose"></activity>
         <activity android:name=".MulChoose"></activity>
         <activity android:name=".MyViewTest"></activity>
-
+        <activity android:name=".MyListViewTest"></activity>
     </application>
 
 </manifest>
